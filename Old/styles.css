@@ -1,0 +1,104 @@
+/* HEADER IMAGE & POSITION */
+#header-template {
+    width: 100%;
+    text-align: center;
+}
+
+#header-image {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* BACKGROUND STYLE & IMAGE */
+body {
+    background-image: url("img/mansion.jpg");
+    background-size: cover; 
+}
+
+/* DIV FORMATS */
+#main {
+    border: 0px solid;
+    border-radius: 5px;
+    background: transparent;
+}
+
+div.border {
+    border: 1.2px solid gray;
+}
+
+div.format {
+    background-color: rgba(245, 245, 245, 0.77);
+    text-align: initial;
+    
+}
+
+div.inline { 
+    float: left;
+    max-width: 25%;
+    padding: 1.65%;
+    margin: 1%;
+ }
+ .after-box {
+    clear: left;
+  }
+
+.background {
+    background-color: aliceblue;
+}
+
+/* 
+div.parent {
+
+}
+div.child {
+
+}
+div.cousin {
+    
+} */
+
+/* IMAGES POSITIONS  */
+
+/* TEXT FONTS & POSITIONS  */
+@media screen and (max-width: 600px) {
+    /* TODO */
+    p.font-style {
+        font-family: serif, sans-serif, 'Times New Roman';
+        font-size: 175%;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 452.44px) {
+    /* TODO */
+    p.font-style {
+        font-family: serif, sans-serif, 'Times New Roman';
+        font-size: 175%;
+        text-align: justify;
+    }
+}
+
+/* BUTTONS  */
+.button {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    display: table-cell;
+    margin: 4px 75px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+  
+  .button:hover {opacity: 1}
+
+
+  .GameOver { 
+    opacity: 0; 
+}

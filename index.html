@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en">
+<div class='background'></div>
+<head>
+    <meta charset="utf-8">
+    <title>Death to Spies</title>
+    <meta name="description" content="Interactive Storyline">
+    <meta name="author" content="Bits&Bytes">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class='global-container container-12'>
+        <!-- <form> -->
+        <!-- HERE GOES TEXTS -->
+        <div class="box-12">
+            <div class="GO CACA"></div>
+            <h2 class='center CACA' id="title"></h2>
+        </div>
+		<div class="box-12"><p class="justify" id="content"></p></div>
+        <!-- HERE IS THE SEPARATION -->
+        <div class="box-12 quest CACA">
+            <!-- HERE GOES QUESTION -->
+            <p class="font-style" id="question"></p>
+            <!-- HERE GOES OPTIONS -->
+            <div class="container">
+                <input id='opt-0'type="radio" checked="true" name="choice" value="0" />
+                <label for="opt-0" id="option_0">Empty</label>
+            </div>
+            <div class="container">
+                <input id='opt-1' type="radio" name="choice" value="1" />
+                <label for="opt-1" id="option_1">Empty</label>
+            </div>
+            <div class="container">
+                <input id='opt-2' type="radio" name="choice" value="2" />
+                <label for="opt-2" id="option_2">Empty</label>
+            </div>
+        
+        <br class="after-box" />
+        <!-- HERES GOES BUTTONS -->
+        <div class="box-12">
+            <input type="hidden" name="choice" id="page" value="1" />
+            <button type="submit" class="button CACA" onclick="SubmitOption()">Submit Answer</button>
+        </div>
+        <!-- HERE GOES CREDITS -->
+		</div>
+    </div>
+    <script src="js/story.js"> </script>
+</body>
+
+</html>

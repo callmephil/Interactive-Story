@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Death to Spies</title>
+    <meta name="description" content="Interactive Storyline">
+    <meta name="author" content="Bits&Bytes">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="btn.css">
+</head>
+
+<body>
+    <!-- HERE GOES THE HEADER  -->
+    <header id="header-template">
+        <img id="header-image" src="img/title.png" alt="The unreal story a russian spy">
+    </header>
+
+    <div id="main">
+        <!-- <form> -->
+        <!-- HERE GOES TEXTS -->
+        <div class="border format inline">
+            <h2 id="title"></h2>
+            <p class="font-style" id="content"></p>
+        </div>
+        <!-- HERE IS THE SEPARATION -->
+        <div class="border format inline CACA">
+            <!-- HERE GOES QUESTION -->
+            <p class="font-style" id="question">
+                <!-- The only way to infiltrate the Mansion and get through heavily armed security of mutant animals is -->
+            </p>
+            <!-- HERE GOES OPTIONS -->
+            <div class="container">
+                <input type="radio" checked="true" name="choice" value="0" />
+                <label for="option_0" id="option_0">Empty</label>
+            </div>
+            <div class="container">
+                <input type="radio" name="choice" value="1" />
+                <label for="option_1" id="option_1">Empty</label>
+            </div>
+            <div class="container">
+                <input type="radio" name="choice" value="2" />
+                <label for="option_2" id="option_2">Empty</label>
+            </div>
+        </div>
+        <br class="after-box" />
+        <!-- HERES GOES BUTTONS -->
+        <div class="border">
+            <input type="hidden" name="choice" id="page" value="1" />
+            <button type="submit" class="button CACA" onclick="SubmitOption()">Submit Answer</button>
+        </div>
+        <!-- HERE GOES CREDITS -->
+    </div>
+    <script src="story.js"> </script>
+</body>
+
+</html>

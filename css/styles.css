@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+/* == BASE == */
+html,
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	font-size: 100%;
+}
+
+body {
+	display: block;
+	background: url('../img/background.jpg');
+	background-size: fill;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+/* == FONT == */
+* {
+	font-family: 'Raleway';
+	font-weight: 400;
+	color: white;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.375rem;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 1.125rem;
+	font-weight: 300;
+	font-style: italic;
+}
+
+h5 {
+	font-size: 1rem;
+	font-weight: 200;
+}
+
+h6 {
+	font-size: 0.875rem;
+	font-weight: 200;
+	font-style: italic;
+}
+
+p {
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 1.6;
+	text-indent: 60px;
+}
+
+a {
+	text-decoration: none;
+	color: #60adaa;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+.font-light {
+	font-weight: 300;
+}
+
+.font-regular {
+	font-weight: 400;
+}
+
+.font-heavy {
+	font-weight: 700;
+}
+
+/* == POSITIONNING == */
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.justify {
+	text-align: justify;
+}
+
+/* == GRID == */
+.container-10 {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: repeat(10, [col] 1fr);
+	grid-template-rows: auto;
+	grid-column-gap: 2em;
+	grid-row-gap: 15px;
+}
+
+.container-12 {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: repeat(12, [col] 1fr);
+	grid-template-rows: auto;
+	grid-column-gap: 2em;
+	grid-row-gap: 15px;
+}
+
+.boxt {
+	border: 1px solid green;
+}
+
+.box-1 {
+	grid-column: span 1;
+}
+
+.box-2 {
+	grid-column: span 2;
+}
+
+.box-3 {
+	grid-column: span 3;
+}
+
+.box-4 {
+	grid-column: span 4;
+}
+
+.box-5 {
+	grid-column: span 5;
+}
+
+.box-6 {
+	grid-column: span 6;
+}
+
+.box-7 {
+	grid-column: span 7;
+}
+
+.box-8 {
+	grid-column: span 8;
+}
+
+.box-9 {
+	grid-column: span 9;
+}
+
+.box-10 {
+	grid-column: span 10;
+}
+
+.box-11 {
+	grid-column: span 11;
+}
+
+.box-12 {
+	grid-column: span 12;
+}
+
+.box-classic {
+	display: block;
+	background: #ffffff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+	padding-top: 15px;
+	padding-bottom: 1em;
+	min-width: 300px;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+
+/* == OTHER == */
+/* Base */
+.background {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0px 0px 150px 40px rgba(0, 0, 0, 0.75);
+	pointer-events: none;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.button {
+	background: none;
+	display: block;
+	margin: auto;
+	padding: 8px 20px 8px 20px;
+	border: 1px solid white;
+}
+
+.button:hover {
+	background-color: rgba(109, 109, 109, 0.33);
+}
+
+/* Head */
+#header-template {
+	width: 400px;
+	margin: auto;
+}
+
+#title {
+	margin-bottom: 0;
+	max-height: 70px;
+}
+
+/* Content */
+.global-container {
+	margin: auto;
+	margin-top: 50px;
+	background-color: rgba(51, 51, 51, 0.66);
+	padding: 50px 40px 20px 40px;
+	max-width: 1024px;
+}
+/* Todo
+@media screen and (max-width:1366px) {
+	.global-container {
+	}
+}
+
+@media screen and (min-width:1366px) {
+	.global-container {
+		max-width: 1524px;
+	}
+} */
+
+.quest {
+	border-top: 1px solid white
+}
+
+
+/* Scripted */
+.GameOver {
+	display: none;
+}
+
+.GO.CACA.GameOver {
+	display: block;
+	height: 70px;
+	width: 250px;
+	margin: auto;
+	background: url('../img/GameOver.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
